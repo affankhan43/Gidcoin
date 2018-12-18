@@ -109,7 +109,7 @@ bool Currency::getBlockReward(size_t medianSize, size_t currentBlockSize, uint64
       baseReward =m_moneySupply*0.10;
   }
   if (alreadyGeneratedCoins + baseReward >= m_moneySupply) {
-      baseReward = 0;
+      baseReward = 100;
   }
   // if (alreadyGeneratedCoins == 0) {
   //     baseReward = 1;
